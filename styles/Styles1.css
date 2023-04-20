@@ -1,8 +1,37 @@
-* {
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+}
 
+header {
+  background-color: #195DD7;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+body {
+  background-color: #EFEFE9;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: beige;
+  font-size: 20px;
+  padding: 6px;
+  font-family: Ubuntu, sans-serif;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  left: 0px;
+  bottom: 30px;
 }
 
 .Lmv {
@@ -11,7 +40,6 @@
   padding: 1px 0px 1px 172px;
   font-family: Ubuntu, sans-serif;
 }
-
 
 .Hdos {
   color: white;
@@ -39,36 +67,11 @@ li {
   font-size: 22px;
 }
 
-
 ul {
   position: relative;
   display: flex;
   left: 0px;
   bottom: 30px;
-}
-
-a {
-  text-decoration: none;
-  color: beige;
-  font-size: 20px;
-  padding: 6px;
-  font-family: Ubuntu, sans-serif;
-}
-
-header {
-  background-color: #195DD7;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-body {
-  background-color: #EFEFE9;
-  width: 100%;
-  height: 100%;
-
 }
 
 .banner1 {
@@ -99,292 +102,210 @@ i {
   background-color: #195DD7;
 }
 
-.container {
-  width: 100%;
+.contenedor {
   max-width: 1200px;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding: 10px;
   margin: auto;
-  font-family: Ubuntu, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  contain: paint;
 }
 
-.container .card {
-  width: 330px;
-  height: 430px;
-  border-radius: 8px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px;
+.contenedor .contenedor-items {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 30px;
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: .3s;
+  
+}
+
+.contenedor .contenedor-items .item {
+  max-width: 200px;
+  margin: auto;
+  border: 1px solid #666;
+  border-radius: 10px;
+  padding: 20px;
+  transition: .3s;
+}
+
+.contenedor .contenedor-items .item .img-item {
+  width: 100%;
+}
+
+.contenedor .contenedor-items .item:hover {
+  box-shadow: 0 0 10px #666;
+  scale: 1.05;
+}
+
+.contenedor .contenedor-items .item .titulo-item {
+  display: block;
+  font-weight: bold;
   text-align: center;
-  transition: all 0.25s;
-  font-family: Ubuntu, sans-serif;
+  text-transform: uppercase;
 }
 
-.container .card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-  font-family: Ubuntu, sans-serif;
+.contenedor .contenedor-items .item .precio-item {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
 }
 
-.container .card img {
-  width: 320px;
-  height: 300px;
-  font-family: Ubuntu, sans-serif;
-}
-
-.container .card h4 {
-  font-weight: 600;
-  font-family: Ubuntu, sans-serif;
-}
-
-.container .card p {
-  padding: 0 1rem;
-  font-size: 16px;
-  font-weight: 300;
-  font-family: Ubuntu, sans-serif;
-}
-
-.container .card a {
-  font-weight: 500;
+.contenedor .contenedor-items .item .boton-item {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 2px solid #195DD7;
+  color: #fff;
   text-decoration: none;
-  color: #3498db;
-  font-family: Ubuntu, sans-serif;
+  background: #195DD7;
+  cursor: pointer;
+  border-radius: 13px;
+  font-size: 16px;
 }
 
-.ofertas-Tv {
-  font-family: Ubuntu, sans-serif;
-  padding: 0px 0px 0px 90px;
+.carrito {
+  border: 1px solid #666;
+  width: 35%;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: auto;
+  position: sticky !important;
+  top: 0;
+  transition: .3s;
+  margin-right: -100%;
+  opacity: 0;
 }
 
-.ProductosTv {
-  color: beige;
-  font-size: 30px;
-  display: flex;
-  text-shadow: 2px 2px 0 black;
+.carrito .header-carrito {
   background-color: #195DD7;
-  align-items: center;
-  justify-content: center;
-  font-family: Ubuntu, sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
 }
 
-.Smart-TV {
-  background-color: #195DD7;
-  padding: 0px 0px 5px 0px;
+.carrito .carrito-item {
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-family: Ubuntu, sans-serif;
+  position: relative;
+  border-bottom: 1px solid #666;
+  padding: 20px;
 }
 
-.ProductosMedio {
-  font-family: Ubuntu, sans-serif;
-  color: white;
-  font-size: 40px;
-  background-color: #195DD7;
-  padding: 0px 0px 5px 0px;
+.carrito .carrito-item img {
+  margin-right: 20px;
+}
+
+.carrito .carrito-item .carrito-item-titulo {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.carrito .carrito-item .selector-cantidad {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.carrito .carrito-item .carrito-item-cantidad {
+  border: none;
+  font-size: 18px;
+  background-color: transparent;
+  display: inline-block;
+  width: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+.carrito .carrito-item .selector-cantidad i {
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.carrito .carrito-item .carrito-item-precio {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.carrito .carrito-item .btn-eliminar {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #000;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  z-index: 20;
+}
+
+.carrito .carrito-item .btn-eliminar i {
+  pointer-events: none;
+}
+
+.carrito-total {
+  background-color: #f3f3f3;
+  padding: 30px;
+}
+
+.carrito-total .fila {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  font-family: Ubuntu, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-#Celulares {
-  font-family: Ubuntu, sans-serif;
-  padding: 20px 0px 5px 175px;
+.carrito-total .btn-pagar {
+  display: block;
+  width: 100%;
+  border: none;
+  background: #195DD7;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
 }
 
-
-@media (min-width: 0px) and (max-width:1025px) {
-  header {
-    padding: 5px;
-    background-color: #195DD7;
-    display: flex;
-    flex-wrap: wrap;
-    
-  }
-
-  .Hdos {
-    font-size: 15px;
-    padding: 1px;
-  }
-
-  h1 {
-    font-size: 15px;
-    padding: 1px;
-  }
-
-  .Lmv {
-    font-size: 15px;
-    padding: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .Productos {
-    padding: 0px 0px 5px 10px;
-  }
-
-  a,
-  li {
-    font-size: 16px;
-  }
-
-  body,
-  header,
-  footer {
-    width: auto;
-  }
-
-  body {
-    margin: 0%
-  }
-
-  .Smart-TV {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-  }
-
-  .ofertas-Tv {
-    padding: 5px 0px 5px 20px;
-    font-size: 22px;
-
-  }
-
-  .ProductosTv {
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  #Celulares {
-    padding: 10px 0px 10px 40px;
-  }
-
+.carrito-total .btn-pagar:hover {
+  scale: 1.05;
 }
 
-@media (min-width: 0px) and (max-width:590px) {
-  header {
-    padding: 5px;
-    background-color: #195DD7;
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (max-width: 850px) {
+  .contenedor {
+    display: block;
   }
 
-  .logo{
-   
+  .contenedor-items {
+    width: 100% !important;
   }
 
-  .Hdos {
-    font-size: 15px;
-    padding: 1px;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  .Lmv {
-    font-size: 15px;
-    padding: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .Productos {
-    padding: 0px 0px 5px 10px;
-  }
-
-  a,
-  li {
-    font-size: 13px;
-    padding: 40px 5px 0px 5px;
-  }
-
-  body,
-  header,
-  footer {
-    width: auto;
-    height: auto;
-  }
-
-  body {
-    margin: 0%
-  }
-
-  .Smart-TV {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-  }
-
-  .ofertas-Tv {
-    padding: 5px 0px 5px 20px;
-
-  }
-
-  .ProductosTv {
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .ProductosMedio{
-    font-size: 20px;
-  }
-
-  #Celulares {
-    padding: 10px 0px 10px 20px;
-  }
-
-  .container .card {
-    width: 330px;
-    height: 430px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s;
-  }
-  
-  .container .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .container .card img {
+  .carrito {
     width: 100%;
-    height: 300px;
   }
-  
-  .container .card h4 {
-    font-weight: 600;
-    font-family: Ubuntu, sans-serif;
-  }
-  
-  .container .card p {
-    padding: 0 1rem;
-    font-size: 16px;
-    font-weight: 300;
-    font-family: Ubuntu, sans-serif;
-  }
-  
-  .container .card a {
-    font-weight: 500;
-    text-decoration: none;
-    color: #3498db;
-  }
-
 }
-
-/*# sourceMappingURL=styles.css.map */

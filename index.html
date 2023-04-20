@@ -13,19 +13,21 @@
     <link rel="stylesheet" href="/styles/Styles1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Short+Stack&family=Ubuntu:wght@300&display=swap"\
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Short+Stack&family=Ubuntu:wght@300&display=swap" \
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/b666761307.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <header>
     <div class="Logo">
-        <img src="/asset/Electrodomestics World.jpg" alt="Logo De ElectrodomesticsWorld" width="100%" height="70%" >
+        <img src="/asset/Electrodomestics World.jpg" alt="Logo De ElectrodomesticsWorld" width="100%" height="70%">
     </div>
     <nav>
         <ul>
             <li id="Menu"><i class="fa-solid fa-user"></i><a href="">Mi Cuenta</a></li>
-            <li id="Menu"><i class="fa-solid fa-cart-shopping"></i><a href="">Mi Carrito</a></li>
             <li id="Menu"><i class="fa-solid fa-eye"></i><a href="">Mas Vendido</a></li>
         </ul>
     </nav>
@@ -36,10 +38,10 @@
     <section class="Productos">
         <nav>
             <ol>
-                <li><a href="./Pages/televisores.html" id="MenuProduc">Televisores</a></li>
-                <li><a href="/Pages/Celulares.html" id="MenuProduc">Celulares</a></li>
-                <li><a href="/Pages/Notebooks.html" id="MenuProduc">Notebooks</a></li>
-                <li><a href="/Pages/Aires.html" id="MenuProduc">Aires</a></li>
+                <li><a href="" id="MenuProduc">Televisores</a></li>
+                <li><a href="" id="MenuProduc">Celulares</a></li>
+                <li><a href="" id="MenuProduc">Notebooks</a></li>
+                <li><a href="" id="MenuProduc">Aires</a></li>
             </ol>
         </nav>
     </section>
@@ -53,33 +55,47 @@
     <div class="Lmv">
         <h1>¡Lo mas vendido!</h1>
     </div>
-    <div class="container">
-        <div class="card">
-            <img src="./asset/lavarropas png.png" alt="">
-            <h4>Lavarropas Samsung</h4>
-            <p>Clase AA. Cap.6 Kg. Display Led. Carga Autoadaptativa. Puerta extra grande. Ciclos especificos de lavado. Antiarrugas. Lavado rapido. Lavado de 1/2 hr. Eco Wash. Hand Wash. Control de temperatura. 600RPM.
+    <section class="contenedor">
 
-            </p>
-            <a href="">Leer más</a>
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Lavarropas Samsung</span>
+                <img src="/asset/lavarropas png.png" alt="" class="img-item">
+                <span class="precio-item">$130.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Tv Samsung 50'</span>
+                <img src="/asset/Samsung-TV-PNG-Pic.png" alt="" class="img-item">
+                <span class="precio-item">$144.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Notebook Asus 19'</span>
+                <img src="/asset/png-clipart-laptop-asus-rog-gl552-asus-rog-g501jw-intel-core-laptop-laptop-asus-rog-removebg-preview.png" alt="" class="img-item">
+                <span class="precio-item">$240.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
         </div>
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
 
-        <div class="card">
-            <img src="/asset/Samsung-TV-PNG-Pic.png" alt="">
-            <h4>Televisor Samsung 50"</h4>
-            <p>Pantalla plana Samsung De 50" con sonido embolvente, Video 3D y cuenta con una resolucion 4K!!</p>
+            <div class="carrito-items">
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
         </div>
-
-        <div class="card">
-            <img src="./asset/png-clipart-laptop-asus-rog-gl552-asus-rog-g501jw-intel-core-laptop-laptop-asus-rog-removebg-preview.png"
-                alt="">
-            <h4>Notebook Asus 19" 512GB SSD </h4>
-            <p>Procesador: Procesador AMD Ryzen™ 7 6800H Memoria: 8 GB DDR5-4800MHz (SODIMM) + 8 GB DDR5-4800MHz (SODIMM) Almacenamiento: 512 GB SSD M.2 2242 PCIe Gen4 TLC Tarjeta Gráfica: RTX™ 3060 6 GB GDDR6</p>
-        </div>
-
-    </div>
-
-
-<script src="/JS/index.js"></script>
+    </section>
+    <script src="/JS/index.js"></script>
 </body>
 
 
