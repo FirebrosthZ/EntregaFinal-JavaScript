@@ -1,0 +1,14 @@
+[
+    { "titulo": "TV Samsung 50'", "id": "Tv-1", "imagen": "/asset/Samsung-TV-PNG-Pic.png", "precio": 144000, "cantidad": 1},
+    { "titulo": "TV LG 42'", "id": "Tv-2", "imagen": "/asset/TVS/televisor LG 2.png", "precio": 184000, "cantidad": 1},
+    { "titulo": "TV Samsung 75'", "id": "Tv-3", "imagen": "/asset/TVS/televisor samsung 2.png", "precio": 172000, "cantidad": 1},
+    { "titulo": "TV Sony 48'", "id": "Tv-4", "imagen": "/asset/TVS/tv sony 2.jpg", "precio": 204000},
+    { "titulo": "Celular Iphone", "id":"Celular-1", "imagen": "/asset/Celulares/iphone celular 1.jpg", "precio": 180000, "cantidad": 1},
+    { "titulo": "Celular Motorola", "id":"Celular-2", "imagen": "/asset/Celulares/motorola celular 1.jpg", "precio": 133000, "cantidad": 1},
+    { "titulo": "Celular Xiaomi Note", "id":"Celular-3", "imagen": "/asset/Celulares/xiaomi celular 2.png", "precio": 150000, "cantidad": 1},
+    { "titulo": "Celular Xiaomi Mi12", "id":"Celular-4", "imagen": "/asset/Celulares/xiaomi celular 3.png", "precio": 167000, "cantidad": 1},
+    { "titulo": "Notebook Asus 19'", "id":"Notebook-1", "imagen": "/asset/png-clipart-laptop-asus-rog-gl552-asus-rog-g501jw-intel-core-laptop-laptop-asus-rog-removebg-preview.png", "precio": 240000, "cantidad": 1},
+    { "titulo": "Notebook Hp 22'", "id":"Notebook-1", "imagen": "/asset/ntbooks/notebook hp 2.jpg", "precio": 215000, "cantidad": 1},
+    { "titulo": "Notebook Apple 20'", "id":"Notebook-1", "imagen": "/asset/ntbooks/ntbok apple 3.jpg", "precio": 270000, "cantidad": 1},
+    { "titulo": "Notebook Apple 24'", "id":"Notebook-1", "imagen": "/asset/ntbooks/notebk apple 2.png", "precio": 294000, "cantidad": 1}
+]

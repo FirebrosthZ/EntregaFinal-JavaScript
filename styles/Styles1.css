@@ -10,9 +10,30 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 98.45%;
 }
 
+main {
+  background-color: white;
+  margin: 1rem;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+.pruducto-imagen {
+  max-width: 100%;
+}
+.numerito{
+  background-color: white;
+  color: black;
+  padding: .15rem .25rem;
+  border-radius: .45rem;
+}
 body {
   background-color: #EFEFE9;
   width: 100%;
@@ -123,7 +144,10 @@ i {
 }
 
 .contenedor .contenedor-items .item {
-  max-width: 200px;
+  width: 300px;
+  max-width: 250px;
+  max-height: 400px;
+  justify-content: center;
   margin: auto;
   border: 1px solid #666;
   border-radius: 10px;
@@ -133,6 +157,8 @@ i {
 
 .contenedor .contenedor-items .item .img-item {
   width: 100%;
+  height: 250px;
+  justify-content: center;
 }
 
 .contenedor .contenedor-items .item:hover {
@@ -156,6 +182,8 @@ i {
 
 .contenedor .contenedor-items .item .boton-item {
   display: inline-block;
+  text-align: center;
+  justify-content: center;
   margin-top: 10px;
   padding: 5px 10px;
   border: 2px solid #195DD7;
